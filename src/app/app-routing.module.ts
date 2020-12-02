@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { Lau1Component } from './lau1/lau1.component';
 import { Lau2Component } from './lau2/lau2.component';
 import { Lau3Component } from './lau3/lau3.component';
+import { PhotosComponent } from './photos/photos.component';
 
 const routes: Routes = [
     { path: 'about', component: AboutComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
     { path: 'chay3', component: Chay3Component },
     { path: 'lau', component: Lau1Component },
     { path: 'lau2', component: Lau2Component },
-    { path: 'lau3', component: Lau3Component }
+    { path: 'lau3', component: Lau3Component },
+    { path: 'photos', component: PhotosComponent }
 ];
 
 @NgModule({

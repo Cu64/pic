@@ -14,6 +14,7 @@ import { Lau3Component } from './lau3/lau3.component';
 import { Chay1Component } from './chay1/chay1.component';
 import { Chay2Component } from './chay2/chay2.component';
 import { Chay3Component } from './chay3/chay3.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { Chay3Component } from './chay3/chay3.component';
     Lau3Component,
     Chay1Component,
     Chay2Component,
-    Chay3Component
+    Chay3Component,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
