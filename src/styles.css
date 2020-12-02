@@ -10,5 +10,8 @@
 
 .link {
     color: brown;
+}
+
+a:hover {
     text-decoration: underline;
 }
