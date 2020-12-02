@@ -7,3 +7,8 @@
 * {
     font-family: Roboto;
 }
+
+.link {
+    color: brown;
+    text-decoration: underline;
+}
