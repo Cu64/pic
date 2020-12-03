@@ -1,74 +1,14 @@
 <div class="mx-6 lg:mx-20">
     <p class="text-4xl mb-5">Events</p>
-    <div class="shadow-lg w-4/5 lg:w-1/2 mx-auto p-4 mb-4">
+    <div class="shadow-lg w-4/5 lg:w-1/2 mx-auto p-4 mb-4" *ngFor="let event of events">
         <div class="grid grid-cols-5">
             <div class="col-span-4">
-                <a class="text-2xl" routerLink="/chay3" routerLinkActive="active">Cháy III: Eternal Love</a>
-                <p>22/11/2020</p>
-                <p>Hanoi Rock City</p>
+                <a class="text-2xl" routerLink={{event.link}} routerLinkActive="active">{{event.name}}</a>
+                <p>{{event.date}}</p>
+                <p>{{event.loc}}</p>
             </div>
             <div>
-                <img class="object-scale-down" src="assets/thumbs/chay3.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="shadow-lg w-4/5 lg:w-1/2 mx-auto p-4 mb-4">
-        <div class="grid grid-cols-5">
-            <div class="col-span-4">
-                <a class="text-2xl" routerLink="/lau3" routerLinkActive="active">Lẩu 3</a>
-                <p>24/11/2019</p>
-                <p>Phố đi bộ Hoàn Kiếm</p>
-            </div>
-            <div>
-                <img class="object-scale-down" src="assets/thumbs/lau3.png" />
-            </div>
-        </div>
-    </div>
-    <div class="shadow-lg w-4/5 lg:w-1/2 mx-auto p-4 mb-4">
-        <div class="grid grid-cols-5">
-            <div class="col-span-4">
-                <a class="text-2xl" routerLink="/chay2" routerLinkActive="active">Cháy II: Love</a>
-                <p>10/02/2019</p>
-                <p>The Sidewalk Hanoi</p>
-            </div>
-            <div>
-                <img class="object-scale-down" src="assets/thumbs/chay2.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="shadow-lg w-4/5 lg:w-1/2 mx-auto p-4 mb-4">
-        <div class="grid grid-cols-5">
-            <div class="col-span-4">
-                <a class="text-2xl" routerLink="/lau2" routerLinkActive="active">Lẩu 2</a>
-                <p>06/01/2019</p>
-                <p>Phố đi bộ Hoàn Kiếm</p>
-            </div>
-            <div>
-                <img class="object-scale-down" src="assets/thumbs/lau2.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="shadow-lg w-4/5 lg:w-1/2 mx-auto p-4 mb-4">
-        <div class="grid grid-cols-5">
-            <div class="col-span-4">
-                <a class="text-2xl" routerLink="/chay" routerLinkActive="active">Cháy</a>
-                <p>13/02/2018</p>
-                <p>Polygon Cafe</p>
-            </div>
-            <div>
-                <img class="object-scale-down" src="assets/thumbs/chay.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="shadow-lg w-4/5 lg:w-1/2 mx-auto p-4 mb-4">
-        <div class="grid grid-cols-5">
-            <div class="col-span-4">
-                <a class="text-2xl" routerLink="/lau" routerLinkActive="active">Lẩu</a>
-                <p>26/11/2017</p>
-                <p>Phố đi bộ Hoàn Kiếm</p>
-            </div>
-            <div>
-                <img class="object-scale-down" src="assets/thumbs/lau.jpg" />
+                <img class="object-scale-down" src="{{'assets/thumbs/' + event.img}}" />
             </div>
         </div>
     </div>
