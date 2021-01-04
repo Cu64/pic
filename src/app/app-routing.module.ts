@@ -13,7 +13,7 @@ import { PhotosComponent } from './photos/photos.component';
 
 const routes: Routes = [
     { path: 'about', component: AboutComponent },
-    { path: 'home', component: HomeComponent },
+    { path: '', component: HomeComponent },
     { path: 'events', component: EventsComponent },
     { path: 'chay', component: Chay1Component },    
     { path: 'chay2', component: Chay2Component },
